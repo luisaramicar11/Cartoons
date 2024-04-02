@@ -1,0 +1,76 @@
+:root{
+    --ppal-color:#01547E;
+    --texto-amarillo-color:#FFF200;
+    --texto-header-color:#fff;
+    --texto-negro-color:#000;
+    --secundario-color:#FF2F00;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "Patrick Hand SC", cursive;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.contenedor-cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--texto-header-color);
+    border-bottom: 1rem;
+    border-bottom-color: var(--secundario-color);
+    border-bottom-style: solid;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index:999;
+}
+
+.contenedor-logo{
+    display:flex;
+    justify-content: start;
+    width: 50vw;
+    align-items: center;
+}
+
+.contenedor-logo img{
+    width: 10rem;
+    height: auto;
+}
+
+.contenedor-navegacion{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--secundario-color);
+    gap: 5rem;
+}
+.contenedor-navegacion li:hover{
+    color:var(--texto-negro-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.imagen-central img{
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+    opacity: 0.6;
+}
+
+
